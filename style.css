@@ -1,0 +1,105 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+
+#header {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  width: 100vw;
+}
+
+#maindiv {
+  /* background-color: darkgrey; */
+  height: 450px;
+  width: 100vw;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#primarydiv {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;  /*to gap between each element within div*/
+}
+
+#rock:hover {
+  border: 5px solid black;
+  /* opacity: 0.5; */ /*for blurness*/
+  cursor: pointer;
+}
+
+#paper:hover {
+  border: 5px solid black;
+  /* opacity: 0.5;  */
+  cursor: pointer;
+}
+
+
+#scissor:hover {
+  border: 5px solid black;
+  /* opacity: .5; */
+  cursor: pointer;
+}
+
+
+#rock,
+#paper,
+#scissor {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  flex-grow: 0;
+  width: 150px;
+  border-radius: 50%;
+  margin: 20px;
+  margin-inline: 50px;
+}
+
+#secondarydiv {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#yourScore,
+#compScore {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-inline: 30px;
+}
+
+#finaldiv {
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  padding-inline: 50px;
+}
+
+#img1,
+#img2,
+#img3 {
+  width: 145px;
+  height: 145px;
+  border-radius: 50%;
+  object-fit:cover; /*to fill image within div appropiately*/
+}
+

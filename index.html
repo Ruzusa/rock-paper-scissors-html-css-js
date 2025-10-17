@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Defines the document type and language -->
+    <meta charset="UTF-8" />
+    <!-- Makes website responsive on all devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Page title shown on browser tab -->
+    <title>Rock Game</title>
+    <!-- Linking external CSS file -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Linking Bootstrap CSS for styling -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Linking Bootstrap JavaScript bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- Header section -->
+    <div id="header">
+      <h3>Rock Paper Scissors</h3>
+    </div>
+
+    <!-- Main container for all elements -->
+    <div id="maindiv">
+      <!-- Div containing rock, paper, and scissor options -->
+      <div id="primarydiv">
+        <!-- Rock option -->
+        <div id="rock" class="option">
+          <img src="rock.png" alt="rock" id="img1" >
+        </div>
+
+        <!-- Paper option -->
+        <div id="paper" class="option">
+          <img src="crumpled_paper.jpeg" alt="paper" id="img2" >
+        </div>
+
+        <!-- Scissor option -->
+        <div id="scissor" class="option">
+          <img src="scissor.png" alt="scissor" id="img3"></div>
+      </div>
+
+      <!-- Div for score display -->
+      <div id="secondarydiv">
+        <!-- User's score -->
+        <div id="yourScore">
+          <h1 id="yourMarks">0</h1>
+          <p>You</p>
+        </div>
+
+        <!-- Computer's score -->
+        <div id="compScore">
+          <h1 id="compMarks">0</h1>
+          <p>Comp</p>
+        </div>
+      </div>
+
+      <!-- Div for displaying result or message -->
+      <div id="finaldiv">
+        <p id="tobeedited">Choose one!</p>
+      </div>
+    </div>
+
+    <!-- Linking external JavaScript file -->
+    <script src="script.js"></script>
+  </body>
+</html>
